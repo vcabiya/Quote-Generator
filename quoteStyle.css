@@ -1,0 +1,58 @@
+body{
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+  background: #372448;
+}
+#siteHeader h1{
+  display: inline;
+}
+#siteHeader span{
+  text-align: left;        
+  margin: 10px;
+}
+#headerBox{
+  display: flex;
+  background-color: #996EC1;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 15px;
+}
+#section{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.customButton{
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 15px;
+  mix-blend-mode:luminosity;
+  padding: 15px;
+  margin: 20px 10px;
+  border: 4px solid black;
+  color: white;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+#add{
+  background-color:#b66dc5;
+}
+#add:hover{
+  background-color:#edbee8;
+  color: black;
+  border: 4px solid white;
+}
+#setting{
+  background-color:#734b96;
+}
+#setting:hover{
+  background-color:#edbee8;
+  color: black;
+  border: 4px solid white;
+}
+
