@@ -1,7 +1,8 @@
 body{
   font-family: 'DM Sans', sans-serif;
   color: white;
-  background: #372448;
+  background: #2a1c37;
+  position: relative;
 }
 #siteHeader h1{
   display: inline;
@@ -17,10 +18,24 @@ body{
   border: 4px solid black;
   border-radius: 15px;
 }
-#section{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+#aboutBox{
+  background-color: #996EC1;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 15px;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+}
+#quoteBox{
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 20px;
+  aspect-ratio: 16 / 9;
+  width: 68%;
+  margin: auto;
+  margin-top: 20px;
+  max-height: 700px;
 }
 .customButton{
   font-style: italic;
@@ -29,7 +44,7 @@ body{
   border-radius: 15px;
   mix-blend-mode:luminosity;
   padding: 15px;
-  margin: 20px 10px;
+  margin: 20px 10px 5px 10px;
   border: 4px solid black;
   color: white;
 }
