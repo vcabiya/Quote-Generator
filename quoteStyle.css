@@ -4,6 +4,9 @@ body{
   background: #2a1c37;
   position: relative;
 }
+#siteheader{
+  height: 1%;
+}
 #siteHeader h1{
   display: inline;
 }
@@ -12,11 +15,11 @@ body{
   margin: 10px;
 }
 #headerBox{
-  display: flex;
   background-color: #996EC1;
   padding: 20px;
   border: 4px solid black;
   border-radius: 15px;
+  height: 0%;
 }
 #aboutBox{
   background-color: #996EC1;
@@ -42,7 +45,6 @@ body{
   font-weight: 700;
   font-size: 20px;
   border-radius: 15px;
-  mix-blend-mode:luminosity;
   padding: 15px;
   margin: 20px 10px 5px 10px;
   border: 4px solid black;
@@ -55,7 +57,7 @@ body{
   
 }
 #add{
-  background-color:#b66dc5;
+  background-color:#af54c1;
 }
 #add:hover{
   background-color:#edbee8;
@@ -63,7 +65,7 @@ body{
   border: 4px solid white;
 }
 #setting{
-  background-color:#734b96;
+  background-color:#6d3d97;
 }
 #setting:hover{
   background-color:#edbee8;
