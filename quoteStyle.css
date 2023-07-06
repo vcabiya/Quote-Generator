@@ -4,9 +4,6 @@ body{
   background: #2a1c37;
   position: relative;
 }
-#siteheader{
-  height: 1%;
-}
 #siteHeader h1{
   display: inline;
 }
@@ -14,12 +11,22 @@ body{
   text-align: left;        
   margin: 10px;
 }
+#textBox{
+  position: absolute;
+  background-color: red;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Dancing Script';
+  margin: 20px;
+  z-index: 6;
+}
 #headerBox{
   background-color: #996EC1;
   padding: 20px;
   border: 4px solid black;
   border-radius: 15px;
-  height: 0%;
+  width: 95%;
+  margin: auto;
 }
 #aboutBox{
   background-color: #996EC1;
@@ -31,6 +38,7 @@ body{
   margin-top: 30px;
 }
 #quoteBox{
+  display: flex;
   background-color: black;
   border: 4px solid white;
   border-radius: 20px;
@@ -39,6 +47,14 @@ body{
   margin: auto;
   margin-top: 20px;
   max-height: 700px;
+  z-index: 7;
+}
+#quoteImage{
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: aquamarine;
 }
 .customButton{
   font-style: italic;
@@ -46,7 +62,7 @@ body{
   font-size: 20px;
   border-radius: 15px;
   padding: 15px;
-  margin: 20px 10px 5px 10px;
+  margin: 20px 0px 5px 10px;
   border: 4px solid black;
   color: white;
 }
@@ -54,12 +70,15 @@ body{
   display: flex;
   justify-content: center;
   align-content: center;
-  
 }
 #add{
   background-color:#af54c1;
 }
-#add:hover{
+#imgUpload{
+  background-color:#af54c1;
+}
+#imgUpload
+:hover{
   background-color:#edbee8;
   color: black;
   border: 4px solid white;

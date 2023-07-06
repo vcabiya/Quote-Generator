@@ -5,22 +5,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="quoteStyle.css" />
+    <script src="back.js"></script>
   </head>
-  <body style="height: 100%;">
+  <body>
     <div id="headerBox">  
-      <div id="siteHeader" >
+      <div id="siteHeader">
         <h1 style="font-size: 2em;">Quote Generator -</h1>
         <span style="font-size: 150%; ">Easily create sharable quote images with this web app.</span>
       </div>
     </div>
-      <div id="quoteBox" style="justify-content: center;" >
+      <div id="quoteBox" z-in>
+        <img id="quoteImage">
+        <div id="textBox"></div>
       </div>
-    <div class="center">
-      <button class= "customButton" id= "add" >Add Image</button>
-      <button class= "customButton" id= "add" >Align and Font Settings</button>
-      <a href="./about.html"><button class= "customButton" id= "setting" >About</button></a>
-
+      <form name="saidForm">
+        <input type="text" id="quoteBody" name= "daQuote">
+        <input type="button" value="flyy" onclick="putBox()">
+      </form>
+      <div class="center">
+        <form name="quoteForm">
+          <input type="file" class="customButton" id="imgUpload" accept="image/*" onchange="onFileSelected(event)" name="imgUpload">
+        </form>
+        <button class= "customButton" id= "add" >Align and Font Settings</button>
+        <a href="./about.html"><button class= "customButton" id= "setting" >About</button></a>
+      </div>
     </div>
   </body>
 </html>
