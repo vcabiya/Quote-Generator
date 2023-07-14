@@ -16,20 +16,21 @@
         <span style="font-size: 150%; ">Easily create sharable quote images with this web app.</span>
       </div>
     </div>
-      <div id="quoteBox" z-in>
+      <div id="quoteBox">
         <img id="quoteImage">
         <div id="textBox"></div>
       </div>
-      <form name="saidForm">
-        <input type="text" id="quoteBody" name= "daQuote">
-        <input type="button" value="flyy" onclick="putBox()">
-      </form>
-      <div class="center">
+      <div class="center" style="margin-left: -250px;">
         <form name="quoteForm">
-          <input type="file" class="customButton" id="imgUpload" accept="image/*" onchange="onFileSelected(event)" name="imgUpload">
+          <input type="file" class="selector" id="imgUpload" accept="image/*" onchange="onFileSelected(event)" name="imgUpload">
         </form>
-        <button class= "customButton" id= "add" >Align and Font Settings</button>
-        <a href="./about.html"><button class= "customButton" id= "setting" >About</button></a>
+        <form name="saidForm" onkeypress="return event.keyCode!=13">
+            <div class="customButton" id="imgUpload">
+              <input type="text" id="quoteBody" style="height: 2.5vh; width: 9vw;" name= "daQuote">
+              <input type="button" value="Body" style="font-size: 3vh;" onclick="putBox()">
+            </div>
+        </form>
+        <a href="./about.html"><button class="customButton" id="setting" style="padding: 17px;" >About</button></a>
       </div>
     </div>
   </body>
