@@ -12,26 +12,34 @@
   <body>
     <div id="headerBox">  
       <div id="siteHeader">
-        <h1 style="font-size: 2em;">Quote Generator -</h1>
+        <h1 style="font-size: 2em;" id="testPiece">Quote Generator -</h1>
         <span style="font-size: 150%; ">Easily create sharable quote images with this web app.</span>
       </div>
     </div>
       <div id="quoteBox">
         <img id="quoteImage">
-        <div id="textBox"></div>
+          <div id="textBox"></div> 
+          <div id="authBox" style="margin-top: 33%;"></div>
       </div>
-      <div class="center" style="margin-left: -250px;">
+      <div class="center">
         <form name="quoteForm">
           <input type="file" class="selector" id="imgUpload" accept="image/*" onchange="onFileSelected(event)" name="imgUpload">
         </form>
+        <div id="mostButtons">
         <form name="saidForm" onkeypress="return event.keyCode!=13">
-            <div class="customButton" id="imgUpload">
+            <div class="noHoverButton" >
               <input type="text" id="quoteBody" style="height: 2.5vh; width: 9vw;" name= "daQuote">
               <input type="button" value="Body" style="font-size: 3vh;" onclick="putBox()">
             </div>
+          </form>
+        <form name="attForm" onkeypress="return event.keyCode!=13">
+          <div class="noHoverButton">
+            <input type="text" id="att" style="height: 2.5vh; width: 9vw;" name= "daAuthor">
+            <input type="button" value="Author" style="font-size: 3vh;" onclick="putAuth()">
+          </div>
         </form>
-        <a href="./about.html"><button class="customButton" id="setting" style="padding: 17px;" >About</button></a>
-      </div>
-    </div>
-  </body>
+        <a href="./about.html"><button class="aboutButton" style="padding: 17px" >About</button></a>
+        </div>
+        </div>
+    </body>
 </html>
